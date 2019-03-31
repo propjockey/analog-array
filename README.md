@@ -77,9 +77,13 @@ define(["analog-array"], function(AnalogArray){});
 ```
 
 Slide functions take 3 arguments, `(from, to, amount)`
+
 `from` is the value at the index `Math.floor(splitIndex)`
+
 `to` is the value at the index `Math.floor(splitIndex) + 1`
+
 `amount` is the scalar = `splitIndex - fromIndex`, which will be a value in the range `(0, 1)`
+
 (amounts 0 and 1 will access the array directly without sliding, otherwise the range would have been [0, 1])
 
 Examples:
